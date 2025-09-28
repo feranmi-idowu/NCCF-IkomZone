@@ -1,13 +1,172 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+  /*responsible for the stable top*/
+  position: sticky; 
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* small gap between logo and title */
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+header .nav {
+  display: flex; /*makes the content side by side*/
+  justify-content: space-between; /*this justify the space between the contents by giving it even space*/
+  align-items: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #056344;
+}
+
+header nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+header nav a:hover {
+  color: #056344;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 10;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero a {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #056344;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.hero a:hover {
+  background: #034b32;
+}
+
+section {
+  padding: 4rem 1rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+section p {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  color: #555;
+}
+
+/* Programs / Events Cards */
+.cards {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
