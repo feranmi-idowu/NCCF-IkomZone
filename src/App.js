@@ -6,6 +6,7 @@ import './index.css';
 import About from "./components/About";
 import Programs from "./components/Programs";
 import Events from "./components/Events";
+import Sermons from "./components/Sermon";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Programs />
       <Events />
+      <Sermons />
     </div>
   );
 }
