@@ -4,7 +4,7 @@ function Sermons() {
   return (
     <section id="sermons">
       <div>
-        <div className="containerAudio">
+        <div className="containerSermon">
           <h2>Sermons</h2>
           <p>Listen to inspiring messages from our services.</p>
           <div className="containerAudio">

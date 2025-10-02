@@ -187,10 +187,28 @@ audio {
   margin-top: 1rem;
 }
 
-.containerAudio {
+.containerSermon {
   width: 90%;
   max-width: 1200px;
   margin: auto;
    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
               0 6px 6px rgba(0, 0, 0, 0.10);
+}
+
+.give {
+  text-align: center;
+}
+
+.give button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #056344;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.give button:hover {
+  background: #034b32;
 }
