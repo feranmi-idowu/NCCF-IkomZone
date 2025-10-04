@@ -7,7 +7,8 @@ import About from "./components/About";
 import Programs from "./components/Programs";
 import Events from "./components/Events";
 import Sermons from "./components/Sermon";
-import Give from "./Give";
+import Give from "./components/Give";
+import Gallery from "./components/Gallery"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Events />
       <Sermons />
       <Give />
+      <Gallery />
     </div>
   );
 }
