@@ -346,3 +346,36 @@ audio {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+
+/* Contact */
+.contact p {
+  margin-bottom: 0.5rem;
+}
+
+.contact form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact button {
+  padding: 0.8rem 1.5rem;
+  background: #056344;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #034b32;
+}

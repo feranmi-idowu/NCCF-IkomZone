@@ -9,6 +9,7 @@ import Events from "./components/Events";
 import Sermons from "./components/Sermon";
 import Give from "./components/Give";
 import Gallery from "./components/Gallery"
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Sermons />
       <Give />
       <Gallery />
+      <Contact />
     </div>
   );
 }
