@@ -8,8 +8,8 @@ import Programs from "./components/Programs";
 import Events from "./components/Events";
 import Sermons from "./components/Sermon";
 import Give from "./components/Give";
-import Gallery from "./components/Gallery"
-import Contact from "./components/Contact";
+import Gallery from "./components/Gallery";
+import Contact from "./components/Contacts";
 
 function App() {
   return (
