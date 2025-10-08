@@ -10,6 +10,7 @@ import Sermons from "./components/Sermon";
 import Give from "./components/Give";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contacts";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Give />
       <Gallery />
       <Contact />
+      <Footer />
     </div>
   );
 }
