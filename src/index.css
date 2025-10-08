@@ -77,6 +77,23 @@ header nav a:hover {
   color: #056344;
 }
 
+@media (max-width: 480px) {
+  /* CSS for phones (e.g. iPhone SE, Android small screens) */
+  header h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #056344;
+}
+
+  .container {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    display: none; /* hide desktop nav */
+  }
+}
+
 /* Hero Section */
 .hero {
   position: relative;
