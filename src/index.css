@@ -80,19 +80,42 @@ header nav a:hover {
 @media (max-width: 480px) {
   /* CSS for phones (e.g. iPhone SE, Android small screens) */
   header h1 {
-  font-size: 1rem;
+  font-size: 0.5rem;
   font-weight: bold;
   color: #056344;
 }
 
-  .container {
-    padding: 1rem;
-  }
-
-  .nav-links {
-    display: none; /* hide desktop nav */
-  }
+ .header-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+header .nav {
+  display: flex; /*makes the content side by side*/
+  justify-content: space-between; /*this justify the space between the contents by giving it even space*/
+  align-items: center;
+  padding: auto;
+}
+
+header nav a {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.55rem;
+}
+
+}
+
 
 /* Hero Section */
 .hero {
