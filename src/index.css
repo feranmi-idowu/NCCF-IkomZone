@@ -114,6 +114,9 @@ header nav a {
   font-size: 0.55rem;
 }
 
+.menu-toggle {
+    display: block;
+  }
 }
 
 

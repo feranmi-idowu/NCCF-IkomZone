@@ -16,7 +16,11 @@ function Header() {
                     <h1 className="">NCCF IKOM Zone</h1>
                   </div>
 
-                  
+                 {/*Harmburger*/} 
+                 <button className="menu-toggle"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    ></button>
+
                 <nav>
                     <a href="#about">About</a>
                     <a href="#programs">Programs</a>
