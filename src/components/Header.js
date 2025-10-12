@@ -19,10 +19,12 @@ function Header() {
                  {/*Harmburger*/} 
                  <button className="menu-toggle"
                     onClick={() => setMenuOpen(!menuOpen)}
-                    ></button>
+                    aria-label="Toggle navigation"e>
+                    ☰
+                    </button>
 
-                <nav>
-                    <a href="#about">About</a>
+                <nav className={menuOpen ? "nav-links active" : "nav-links"}>
+                    <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
                     <a href="#programs">Programs</a>
                     <a href="#events">Events</a>
                     <a href="#sermons">Sermons</a>
