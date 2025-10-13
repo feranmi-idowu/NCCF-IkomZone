@@ -25,12 +25,12 @@ function Header() {
 
                 <nav className={menuOpen ? "nav-links active" : "nav-links"}>
                     <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-                    <a href="#programs">Programs</a>
-                    <a href="#events">Events</a>
-                    <a href="#sermons">Sermons</a>
-                    <a href="#give">Give</a>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#programs" onClick={() => setMenuOpen(false)}>Programs</a>
+                    <a href="#events" onClick={() => setMenuOpen(false)}>Events</a>
+                    <a href="#sermons" onClick={() => setMenuOpen(false)}>Sermons</a>
+                    <a href="#give" onClick={() => setMenuOpen(false)}>Give</a>
+                    <a href="#gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
+                    <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
                 </nav>
             </div>
         </header>

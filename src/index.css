@@ -114,8 +114,38 @@ header nav a {
   font-size: 0.55rem;
 }
 
-.menu-toggle {
+/* Hamburger */
+ .menu-toggle {
     display: block;
+  }
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    background: #fff;
+    border-radius: 0 0 0 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 0.7rem 0;
+    width: 100%;
+    color: #056344;
+    font-weight: 500;
+  }
+
+  header .nav {
+    justify-content: space-between;
   }
 }
 
