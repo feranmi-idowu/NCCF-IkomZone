@@ -77,6 +77,10 @@ header nav a:hover {
   color: #056344;
 }
 
+.menu-toggle {
+    display: none;
+  }
+
 @media (max-width: 480px) {
   /* CSS for phones (e.g. iPhone SE, Android small screens) */
   header h1 {
@@ -120,16 +124,16 @@ header nav a {
   }
   .nav-links {
     position: absolute;
-    top: 70px;
+    top: 45px;
     right: 0;
-    width: 200px;
+    width: 100px;
     background: #fff;
     border-radius: 0 0 0 10px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
     display: none;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem;
+    padding: 0.5rem;
     transition: all 0.3s ease;
   }
 
@@ -138,7 +142,7 @@ header nav a {
   }
 
   .nav-links a {
-    margin: 0.7rem 0;
+    margin: 0.2rem 0;
     width: 100%;
     color: #056344;
     font-weight: 500;
