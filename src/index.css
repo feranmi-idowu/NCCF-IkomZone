@@ -151,6 +151,22 @@ header nav a {
   header .nav {
     justify-content: space-between;
   }
+
+  .btn {
+    margin: auto;
+    width: 70%;
+  }
+
+  .contact-button {
+     margin: auto;
+     width: 70%;
+  }
+
+  .contact-button:hover{
+    background-color: #065f46; /* emerald-700 */
+  transform: translateY(-2px);
+  }
+
 }
 
 
