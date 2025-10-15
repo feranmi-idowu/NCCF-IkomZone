@@ -515,3 +515,8 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+/*scroll*/
+html {
+  scroll-behavior: smooth;
+}
