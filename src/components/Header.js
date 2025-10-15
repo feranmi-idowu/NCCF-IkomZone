@@ -4,6 +4,15 @@ import logo from "../images/nccf-logo-no-bg.png";
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false)
 
+     // 👇 Function to scroll smoothly to sections
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" }); // smooth animation
+      setMenuOpen(false); // close the menu after clicking
+    }
+  };
+
     return (
         <header>
             <div className="header-container">
@@ -23,8 +32,8 @@ function Header() {
                     ☰
                     </button>
 
-                <nav className={menuOpen ? "nav-links active" : "nav-links"}>
-                    <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+                <nav className={menuOpen ? "nav-links active" : "nav-links"} >
+                    <a onClick={() => scrollToSection("about")}>About</a>
                     <a href="#programs" onClick={() => setMenuOpen(false)}>Programs</a>
                     <a href="#events" onClick={() => setMenuOpen(false)}>Events</a>
                     <a href="#sermons" onClick={() => setMenuOpen(false)}>Sermons</a>
