@@ -34,12 +34,12 @@ function Header() {
 
                 <nav className={menuOpen ? "nav-links active" : "nav-links"} >
                     <a onClick={() => scrollToSection("about")}>About</a>
-                    <a href="#programs" onClick={() => setMenuOpen(false)}>Programs</a>
-                    <a href="#events" onClick={() => setMenuOpen(false)}>Events</a>
-                    <a href="#sermons" onClick={() => setMenuOpen(false)}>Sermons</a>
-                    <a href="#give" onClick={() => setMenuOpen(false)}>Give</a>
-                    <a href="#gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
-                    <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+                    <a onClick={() => scrollToSection("programs")}>Programs</a>
+                    <a onClick={() => scrollToSection("events")}>Events</a>
+                    <a onClick={() => scrollToSection("sermons")}>Sermons</a>
+                    <a onClick={() => scrollToSection("give")}>Give</a>
+                    <a onClick={() => scrollToSection("gallery")}>Gallery</a>
+                    <a onClick={() => scrollToSection("contact")}>Contact</a>
                 </nav>
             </div>
         </header>
