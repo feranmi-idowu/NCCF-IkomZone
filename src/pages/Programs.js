@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 /* function Programs() {
   return (
@@ -27,7 +27,7 @@ import React from "react";
 export default Programs; */
 
 
-import Card from "./Card";
+import Card from "../components/Card";
 
 function Programs() {
   const programs = [
@@ -44,6 +44,11 @@ function Programs() {
       description: "Intense moments of prayer, intercession, and encounters.",
     },
   ];
+
+ /* const scroll = (direction) => {
+    const container = carouselRef.current;
+  }; */
+
 
   return (
     <section id="programs">
