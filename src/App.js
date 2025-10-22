@@ -11,21 +11,27 @@ import Give from "./pages/Give";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contacts";
 import Footer from "./components/Footer";
+import { Route, Router, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Header />
-      <Hero />
-      <About />
-      <Programs />
-      <Events />
-      <Sermons />
-      <Give />
-      <Gallery />
-      <Contact />
+      <main>
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/programs" element={<Programs />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/sermons" element={<Sermons />} />
+          <Route path="/give" element={<Give />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
       <Footer />
-    </div>
+    </Router>
+      
   );
 }
 
