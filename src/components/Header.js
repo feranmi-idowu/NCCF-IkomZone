@@ -6,6 +6,10 @@ import { NavLink } from "react-router-dom";
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false)
 
+    // Toggle menu on small screens
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
      // 👇 Function to scroll smoothly to sections
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
