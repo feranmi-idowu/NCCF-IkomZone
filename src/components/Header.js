@@ -10,6 +10,12 @@ function Header() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  // Close menu when a link is clicked
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
      // 👇 Function to scroll smoothly to sections
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -33,7 +39,7 @@ function Header() {
 
                  {/*Harmburger*/} 
                  <button className="menu-toggle"
-                    onClick={() => setMenuOpen(!menuOpen)}
+                    onClick={toggleMenu}
                     aria-label="Toggle navigation"e>
                     ☰
                     </button>
