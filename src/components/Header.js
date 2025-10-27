@@ -16,6 +16,7 @@ function Header() {
     setMenuOpen(false);
   };
 
+  /*
      // 👇 Function to scroll smoothly to sections
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -24,6 +25,7 @@ function Header() {
       setMenuOpen(false); // close the menu after clicking
     }
   };
+*/
 
     return (
         <header>
@@ -45,13 +47,14 @@ function Header() {
                     </button>
 
                 <nav className={menuOpen ? "nav-links active" : "nav-links"} >
-                    <a onClick={() => scrollToSection("about")}>About</a>
-                    <a onClick={() => scrollToSection("programs")}>Programs</a>
-                    <a onClick={() => scrollToSection("events")}>Events</a>
-                    <a onClick={() => scrollToSection("sermons")}>Sermons</a>
-                    <a onClick={() => scrollToSection("give")}>Give</a>
-                    <a onClick={() => scrollToSection("gallery")}>Gallery</a>
-                    <a onClick={() => scrollToSection("contact")}>Contact</a>
+                    <NavLink to="/" onClick={closeMenu}>Hero</NavLink>
+                    <NavLink to="/about" onClick={closeMenu}>About</NavLink>
+                    <NavLink to="/programs" onClick={closeMenu}>Programs</NavLink>
+                    <NavLink to="/events" onClick={closeMenu}>Events</NavLink>
+                    <NavLink to="/sermons" onClick={closeMenu}>Sermons</NavLink>
+                    <NavLink to="/give" onClick={closeMenu}>Give</NavLink>
+                    <NavLink to="/gallery" onClick={closeMenu}>Gallery</NavLink>
+                    <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
                 </nav>
             </div>
         </header>

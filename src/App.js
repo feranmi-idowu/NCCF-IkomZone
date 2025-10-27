@@ -11,7 +11,7 @@ import Give from "./pages/Give";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contacts";
 import Footer from "./components/Footer";
-import { Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
