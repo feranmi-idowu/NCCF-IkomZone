@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
-import Hero from "./pages/Hero";
+import Home from "./pages/Home";
 //import './App.css';
 import './index.css';
 import About from "./pages/About";
@@ -19,7 +19,7 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/events" element={<Events />} />

@@ -47,7 +47,7 @@ function Header() {
                     </button>
 
                 <nav className={menuOpen ? "nav-links active" : "nav-links"} >
-                    <NavLink to="/" onClick={closeMenu}>Hero</NavLink>
+                    <NavLink to="/" onClick={closeMenu}>Home</NavLink>
                     <NavLink to="/about" onClick={closeMenu}>About</NavLink>
                     <NavLink to="/programs" onClick={closeMenu}>Programs</NavLink>
                     <NavLink to="/events" onClick={closeMenu}>Events</NavLink>
