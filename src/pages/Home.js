@@ -1,7 +1,7 @@
 import React from "react";
 import IMG_7683 from "../images/IMG_7683.jpg";
 
-function Hero() {
+function Home() {
     return (
         <section className="hero">
             <div>
@@ -17,4 +17,4 @@ function Hero() {
 }
 
 
-export default Hero;
+export default Home;
