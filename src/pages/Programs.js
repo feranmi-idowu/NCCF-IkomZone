@@ -52,16 +52,18 @@ function Programs() {
 
   return (
     <section id="programs">
-      <div className="container">
+      <div className="">
         <h2>Our Programs</h2>
-        <div className="cards">
-          {programs.map((program, index) => (
-            <Card
-              key={index}
-              title={program.title}
-              description={program.description}
-            />
-          ))}
+        <div className="page-container">
+          <div className="cards">
+            {programs.map((program, index) => (
+              <Card
+                key={index}
+                title={program.title}
+                description={program.description}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

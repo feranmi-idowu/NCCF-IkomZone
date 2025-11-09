@@ -524,3 +524,14 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
+.page-container {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  height: 100vh;           /* full viewport height */
+  width: 100vw;            /* full viewport width */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
