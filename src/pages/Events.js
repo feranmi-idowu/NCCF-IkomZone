@@ -20,16 +20,18 @@ function Events() {
 
   return (
     <section id="programs">
-      <div className="container">
-        <h2>Upcoming Events</h2>
-        <div className="cards">
-          {events.map((program, index) => (
-            <Card
-              key={index}
-              title={program.title}
-              description={program.description}
-            />
-          ))}
+      <div className="page-container">
+        <div className="container">
+          <h2>Upcoming Events</h2>
+          <div className="cards">
+            {events.map((program, index) => (
+              <Card
+                key={index}
+                title={program.title}
+                description={program.description}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

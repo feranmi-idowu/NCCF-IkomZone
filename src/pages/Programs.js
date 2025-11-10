@@ -52,9 +52,9 @@ function Programs() {
 
   return (
     <section id="programs">
-      <div className="">
+      <div className="page-container">
+        <div className="container">
         <h2>Our Programs</h2>
-        <div className="page-container">
           <div className="cards">
             {programs.map((program, index) => (
               <Card
