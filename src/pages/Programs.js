@@ -11,7 +11,7 @@ function Programs() {
     },
     {
       title: "Bible Study",
-      description: "Weekly in-depth study of God’s Word for spiritual growth.",
+      description: "Weekly in-depth study of Gos Word for spiritual growth.",
     },
     {
       title: "Prayer Meetings",
