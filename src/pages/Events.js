@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../Programs&Events.css'
 import Card from "../components/Card";
 
 function Events() {
