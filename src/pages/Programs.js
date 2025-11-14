@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-
+import '../Programs&Events.css'
 
 import Card from "../components/Card";
 
