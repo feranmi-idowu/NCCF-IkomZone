@@ -1,4 +1,4 @@
-import React from "react";
+import react from "react";
 import '../Programs&Events.css'
 
 import Card from "../components/Card";
